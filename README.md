@@ -2,6 +2,7 @@ Club de hockey - Estadisticas de la temporada
 
 Felipe Di Plácido
 legajo 21256/2
+diplacidofelipe@gmail.com
 ------------------------------
 
 Instalación en modo desarrollo

@@ -48,11 +48,11 @@ def most_influential_player (players_stats):
 
 def average_goals (goals, matches):
     """
-    This function calculates the average of the season.
+    This function calculates the season goal average.
 
     Args:
-        goals = List of integer with the goals of each player.
-        matches = Integer with the number of matches of the season.
+        goals: List of integer with the goals of each player.
+        matches: Integer with the number of matches of the season.
     
     Return:
         Season goals average 
@@ -64,8 +64,14 @@ def average_goals (goals, matches):
 
 def averga_goals_scorer (players_stats, matches):
     """
+    This function calculates the season goal average of the top scorer.
     
-    
+    Args: 
+        player_stats: List of dictionaries with the statistics of each player.
+        matches: Integer with the number of matches of the season.
+
+    Return:
+        Season goals average of top scorer.
     """
     scorer = top_scorer(players_stats)
     average = scorer[1] / matches
