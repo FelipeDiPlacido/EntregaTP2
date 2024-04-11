@@ -45,3 +45,29 @@ def most_influential_player (players_stats):
     """
     most_influential = max(players_stats, key=lambda x: (x["goals"] * 1.5 + x["goals_avoided"] * 1.25 + x["assists"]) / 3 )
     return most_influential["name"]
+
+def average_goals (goals, matches):
+    """
+    This function calculates the average of the season.
+
+    Args:
+        goals = List of integer with the goals of each player.
+        matches = Integer with the number of matches of the season.
+    
+    Return:
+        Season goals average 
+    
+    """
+    total_goals = sum(goals)
+    average = total_goals/ matches
+    return average
+
+def averga_goals_scorer (players_stats, matches):
+    """
+    
+    
+    """
+    scorer = top_scorer(players_stats)
+    average = scorer[1] / matches
+    return average
+
